@@ -1,0 +1,17 @@
+<html>
+<body>
+<div>
+<h1>Multi-Line Comment Goes Here! ........................</h1>
+<span>Some other line</span>
+
+<div style="height: 500px; width: 100%; background-color: blue"></div>
+<button type="button" onclick="addToDom()">Load New DIV</button>
+<div id="x"></div>
+</div>
+<script type="text/javascript">
+    function addToDom() {
+        document.getElementById("x").insertAdjacentHTML("afterbegin", '<div style="height: 500px; width: 100%; background-color: green"></div>');
+    }
+</script>
+</body>
+</html>
